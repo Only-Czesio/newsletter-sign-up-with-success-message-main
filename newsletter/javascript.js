@@ -21,7 +21,3 @@ function handleClick() {
   let value = document.querySelector("#value");
   value.innerHTML = connecting.value;
 }
-
-
-
-  
