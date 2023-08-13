@@ -15,12 +15,9 @@ form.addEventListener("submit", function(event){
 button.addEventListener("click", handleClick);
 
 function handleClick() {
-    if(connecting.value === "") 
-    if (!validateEmail(connecting.value)) {
-        
-    }
-}
-function validateEmail(email) {
-  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  return regex.test(String(email).toLowerCase());
+  if (connecting.value === "") {
+      return
+  }
+  let value = document.querySelector("#confirmationEmail");
+  value.innerHTML = connecting.value;
 }
