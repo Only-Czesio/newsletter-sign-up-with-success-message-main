@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+}
+:root {
+    --paragraph: 16px;
+    --main-color: hsl(234, 29%, 20%);
+    --highlighted: hsl(4, 100%, 67%);
+    --background: hsl(235, 18%, 26%);
+}
+html {
+    height: 100%;
+    background-color: var(--background) !important;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textContainer {
+    margin-top: 40px;
+    margin-left:20px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+    color: var(--main-color);
+    font-size: 50px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bold;
+}
+p {
+    color: #3f424b;
+    font-size: var(--paragraph);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    color: #3f424b;
+    list-style: none;
+    font-size: var(--paragraph);
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    font-size: var(--paragraph);
+    margin-bottom: 15px;
+    padding: 0;
+}
+#anything {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+input,button {
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.points{
+    margin-right: 20px;
+}
+.imageContainer svg {
+    margin-left:20px;
+    margin-right: 0px;
+}
+input {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+label:first-child {
+    color: var(--background);
+    font-size: 12px;
+    font-weight: bold;
+}
+.labels {
+    display: flex;
+    justify-content: space-between;
+    color: var(--highlighted) !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+.disabled {
+    display: none;
+}
+.hidden.hidden{
+    display: none;
+}
+.background {
+    background-color: hsl(0, 0%,100%);
+    height: 640px;
+    width: 850px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 35px;
+}
+button {
+    background-color: var(--main-color);
+    color: white;
+}
+input {
+    border: 1px var(--main-color) solid;
+}
+input[type="email"] {
+   padding-left: 30px;
+}
+button:hover {
+    background: linear-gradient(to right,#ff5476, #ff673e);
+    cursor: pointer;
+}
+.success {
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.znaczek {
+    border-radius: 50%;
+    background-color: var(--highlighted);
+}
+.marginLeft {
+    margin-left: 45px;
+}
+@media(max-width: 40rem) {
+
+}
