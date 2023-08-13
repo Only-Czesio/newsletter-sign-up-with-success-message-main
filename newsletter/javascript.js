@@ -18,6 +18,6 @@ function handleClick() {
   if (connecting.value === "") {
       return
   }
-  let value = document.querySelector("#value");
+  let value = document.querySelector("#confirmationEmail");
   value.innerHTML = connecting.value;
 }
