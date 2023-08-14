@@ -69,6 +69,7 @@ input,button {
     margin-right: 0px;
 }
 input {
+    cursor: pointer;
     margin-top: 15px;
     margin-bottom: 20px;
 }
