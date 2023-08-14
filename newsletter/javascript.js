@@ -16,6 +16,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
   } else {
     console.log("I successfully show you a success message");
+    event.preventDefault();
     document.querySelector(".background").classList.add("hidden");
     success.classList.remove("hidden");
   }

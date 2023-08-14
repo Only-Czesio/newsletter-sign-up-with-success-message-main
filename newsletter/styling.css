@@ -115,25 +115,44 @@ button:hover {
     background: linear-gradient(to right,#ff5476, #ff673e);
     cursor: pointer;
 }
+input:invalid {
+    color: var(--highlighted);
+    border-color: var(--highlighted);
+}
 .success {
     width: 550px;
     height: 550px;
     background-color: white;
     border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 .znaczek {
     border-radius: 50%;
     background-color: var(--highlighted);
 }
 .marginLeft {
-    margin-left: 45px;
+    margin-left: 65px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-input:invalid {
-    color: var(--highlighted);
-    border-color: var(--highlighted);
+.heading {
+    font-size: 55px;
+    height:120px;
+}
+
+#confirmationEmail {
+    font-weight: bold;
+}
+.goBack {
+    width: 440px;
+    font-size: 16px;
+    font-weight: bold;
+}
+p {
+    font-family: 'Hanken Grotesk', sans-serif;
+    width: 440px;
 }
 @media(max-width: 40rem) {
 
