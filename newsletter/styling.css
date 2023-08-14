@@ -109,6 +109,7 @@ input {
 }
 input[type="email"] {
    padding-left: 30px;
+   color: var(--highlighted);
 }
 button:hover {
     background: linear-gradient(to right,#ff5476, #ff673e);
@@ -129,6 +130,10 @@ button:hover {
 }
 .marginLeft {
     margin-left: 45px;
+}
+input:invalid {
+    color: var(--highlighted);
+    border-color: var(--highlighted);
 }
 @media(max-width: 40rem) {
 
